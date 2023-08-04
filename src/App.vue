@@ -34,6 +34,11 @@ body {
   background-size: contain;
   background-position: center;
 }
-
+/* Media query for mobile */
+@media screen and (max-width: 767px) {
+  .background-container {
+    background-size: cover; /* Set background-size to cover on mobile */
+  }
+}
 
 </style>
