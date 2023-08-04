@@ -18,6 +18,11 @@ export default {
 </script>
 
 <style>
+
+body {
+  margin: 0;
+}
+
 .background-container {
   position: relative;
   height: 100vh;

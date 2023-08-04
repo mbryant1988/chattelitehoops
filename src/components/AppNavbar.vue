@@ -2,8 +2,9 @@
   <nav :class="{ 'navbar-scrolled': isScrolled }">
     <div class="nav-container">
       <div class="nav-logo">
-        <!-- Add your logo here -->
-        <img src="@assets/logo.png" alt="Logo" class="logo-image">
+        <router-link to="/">
+          <img src="@assets/logo.png" alt="Logo" class="logo-image">
+        </router-link>
       </div>
       <div class="nav-content">
         <div class="nav-top">
@@ -74,7 +75,7 @@ nav {
 }
 
 .logo-image {
-  height: 60px; /* Set the height of the logo as needed */
+  height: 100px; /* Set the height of the logo as needed */
   /* Add any other styles for the logo here */
 }
 
@@ -110,10 +111,11 @@ nav {
   font-family: 'Montserrat', sans-serif;
   padding: 0 15px;
   line-height: 50px;
+  text-transform: uppercase; 
 }
 
 .nav-link:hover {
-  color: red;
+  color: navy;
 }
 
 .nav-top .nav-link {
