@@ -1,16 +1,28 @@
 <template>
   <nav :class="{ 'navbar-scrolled': isScrolled }">
     <div class="nav-container">
-      <router-link class="nav-link" to="/">HOME</router-link>
-      <router-link class="nav-link" to="/about">ABOUT</router-link>
-      <router-link class="nav-link" to="/teams">TEAMS</router-link>
-      <router-link class="nav-link" to="/contact">CONTACT-US</router-link>
-
-
-      <!-- Add more links as needed -->
+      <div class="nav-logo">
+        <!-- Add your logo here -->
+        <img src="@assets/logo.png" alt="Logo" class="logo-image">
+      </div>
+      <div class="nav-content">
+        <div class="nav-top">
+          <router-link to="/" class="nav-link">What's Your Why?</router-link>
+        </div>
+        <div class="nav-divider"></div>
+        <div class="nav-bottom">
+          <router-link to="/teams" class="nav-link">Teams</router-link>
+          <router-link to="/coaches" class="nav-link">Coaches</router-link>
+          <router-link to="/about" class="nav-link">About</router-link>
+          <router-link to="/events" class="nav-link">Events</router-link>
+        </div>
+      </div>
     </div>
   </nav>
 </template>
+
+<!-- The rest of the script and style sections remain the same -->
+
 
 <script>
 export default {
@@ -53,44 +65,58 @@ nav {
   max-width: 1240px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center; /* Vertically center items */
 }
 
-.nav-top {
+.nav-logo {
+  /* Remove flex: 1; to allow the logo to take its natural width */
+}
+
+.logo-image {
+  height: 60px; /* Set the height of the logo as needed */
+  /* Add any other styles for the logo here */
+}
+
+.nav-content {
+  flex: 1;
   display: flex;
-  justify-content: flex-start; /* Align content to the start (left) */
-  align-items: center;
-  padding-bottom: 10px; /* Add some space at the bottom of the top section */
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-top,
+.nav-bottom {
+  /* Remove flex: 2; to allow these sections to take their natural width */
+  /* flex: 2; */
 }
 
 .nav-divider {
-  height: 1px;
+  /* Remove height: 100%; and set a fixed height for the divider */
+  height: 1px; /* Adjust the height as needed */
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
-  margin: 10px 0; /* Add some space above and below the divider */
-}
+  margin: 5px 15px; /* Add some space above and below the divider */
 
-.logo {
-  max-height: 50px; /* Adjust logo height as needed */
-  /* Add any other styles for the logo here */
+
 }
 
 .nav-link {
   font-size: 13px;
   font-weight: 700;
-  line-height: 50px;
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
   font-family: 'Montserrat', sans-serif;
-  padding-right: 50px;
-}
-
-.nav-link:last-child {
-  padding-right: 0;
+  padding: 0 15px;
+  line-height: 50px;
 }
 
 .nav-link:hover {
   color: red;
+}
+
+.nav-top .nav-link {
+  font-size: 26px; /* Adjust the font size as needed */
 }
 </style>
