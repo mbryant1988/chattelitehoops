@@ -1,5 +1,5 @@
 <template>
-  <nav :class="{ 'navbar-scrolled': isScrolled }">
+  <nav :class="{ 'navbar-scrolled': isScrolled , 'navbar' : true}">
     <div class="nav-container">
       <div class="nav-logo">
         <router-link to="/">
@@ -48,7 +48,7 @@ export default {
 
 <style>
 /* Customize your navbar styles here */
-nav {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
