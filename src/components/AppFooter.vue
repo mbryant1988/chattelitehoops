@@ -17,9 +17,6 @@
         </div>
       </div>
 
-      <!-- Empty div to align the start of the "Social Media" section -->
-      <!-- Removed the empty space div here -->
-
       <!-- Social Media section -->
       <div class="footer-social">
         <h3 class="footer-heading">Social Media</h3>
@@ -29,9 +26,6 @@
           <router-link to="/instagram" class="social-link">Instagram</router-link>
         </div>
       </div>
-
-      <!-- Empty div to align the start of the end of the content -->
-      <!-- Removed the empty space div here -->
 
       <!-- Other section -->
       <div class="footer-other">
@@ -113,8 +107,6 @@ export default {};
 .social-link:hover,
 .other-link:hover {
   color: navy; /* Set link hover color to navy */
-  /* Remove the white background on hover for now */
-  /* background-color: #ffffff; */
 }
 
 /* Style the dividers between the links (same as in the previous examples) */
@@ -123,5 +115,28 @@ export default {};
   height: 10px;
   background-color: #ffffff;
   margin: 0 5px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on mobile */
+  }
+
+  .footer-logo {
+    margin-bottom: 20px; /* Add some spacing between logo and sections on mobile */
+  }
+
+  .footer-teams,
+  .footer-social,
+  .footer-other {
+    margin-bottom: 30px; /* Add some spacing between sections on mobile */
+  }
+
+  .team-links,
+  .social-links,
+  .other-links {
+    align-items: center; /* Center the links horizontally on mobile */
+  }
 }
 </style>
