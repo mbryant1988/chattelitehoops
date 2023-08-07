@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-
+@import "@/assets/colors.css";
 body {
   margin: 0;
 }

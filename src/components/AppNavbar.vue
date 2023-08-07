@@ -117,7 +117,7 @@ export default {
 .hamburger-icon {
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: var(--color-primary);
   position: relative;
   transition: transform 0.3s ease;
 }
@@ -127,7 +127,7 @@ export default {
   content: '';
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: var(--color-primary);
   position: absolute;
   left: 0;
   transition: transform 0.3s ease;
@@ -200,7 +200,7 @@ export default {
 }
 
 .nav-link:hover {
-  color: navy;
+  color: var(--color-secondary);
 }
 
 .nav-top .nav-link {

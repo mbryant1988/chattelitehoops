@@ -47,7 +47,7 @@ export default {};
 <style>
 /* Footer styles (updated with background color) */
 .footer {
-  background-color: black; /* Set the background color to black */
+  background-color: var(--color-quaternary); /* Set the background color to black */
   color: #ffffff;
   padding: 40px 0;
 }
@@ -60,6 +60,7 @@ export default {};
   flex-wrap: wrap;
   justify-content: space-between; /* Adjust the spacing between sections */
   align-items: flex-start;
+  padding: 30px;
 }
 
 /* Adjust the width of the logo */
@@ -78,7 +79,7 @@ export default {};
 .footer-teams h3,
 .footer-social h3,
 .footer-other h3 {
-  color: navy; /* Set headline color to navy */
+  color: var(--color-secondary); /* Set headline color to navy */
   font-size: 18px;
   font-weight: 900; /* Set font weight to 900 (bold) */
   margin-bottom: 10px;
@@ -96,7 +97,7 @@ export default {};
 .team-link,
 .social-link,
 .other-link {
-  color: white; /* Set link color to white */
+  color: var(--color-primary); /* Set link color to white */
   text-decoration: none;
   font-size: 14px;
   padding: 5px 10px;
@@ -106,7 +107,7 @@ export default {};
 .team-link:hover,
 .social-link:hover,
 .other-link:hover {
-  color: navy; /* Set link hover color to navy */
+  color: var(--color-secondary); /* Set link hover color to navy */
 }
 
 /* Style the dividers between the links (same as in the previous examples) */
@@ -136,7 +137,7 @@ export default {};
   .team-links,
   .social-links,
   .other-links {
-    align-items: center; /* Center the links horizontally on mobile */
+    align-items: flex-start; /* Center the links horizontally on mobile */
   }
 }
 </style>
