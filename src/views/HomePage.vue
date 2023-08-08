@@ -73,7 +73,7 @@ export default {
   .background-container {
   position: relative;
   height: 100vh;
-  background-image: url("@/assets/DSC01494.jpg");
+  background-image: url("@/assets/bg-image.jpg");
   background-size: cover;
   background-position: center;
 }
