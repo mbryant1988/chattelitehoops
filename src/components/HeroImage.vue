@@ -1,11 +1,10 @@
 <template>
     <div class="hero-container">
-      <div class="content">
+      <div class="hero-content">
         <!-- Left-aligned content -->
         <h1>Welcome to My Website</h1>
         <p>
-          This is a sample hero section with a left-aligned image.
-          Customize it as per your requirements.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ipsam ratione laboriosam voluptatibus ea et, illum autem eligendi eos tempora! Obcaecati perspiciatis expedita officiis voluptatum quae quia accusamus assumenda deleniti. Illum, possimus laudantium! Numquam eos voluptatem rem ratione nisi doloremque, quibusdam voluptas nostrum animi iusto nobis quod praesentium assumenda voluptatibus, debitis quaerat? Eveniet ipsam labore doloremque maxime perspiciatis molestiae facilis. Ullam veniam ut reiciendis repellendus ex eum quasi, exercitationem velit deleniti eius commodi dicta, cupiditate voluptatibus pariatur dignissimos hic laborum.
         </p>
       </div>
       <div class="image">
@@ -28,12 +27,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 15px;
+ 
   }
   
-  .content {
+  .hero-content {
     flex: 1;
     max-width: 50%;
+    padding: 60px 40px;
   }
   
   h1 {

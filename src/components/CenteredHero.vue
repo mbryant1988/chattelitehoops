@@ -1,6 +1,6 @@
 <template>
     <div class="centered-hero-container">
-      <div class="content">
+      <div  class="centered-hero-content" :class="{ visible: isVisible}">
         <!-- Centered content -->
         <h1 class="hero-title">Welcome to My Website</h1>
         <p class="hero-description">
@@ -15,12 +15,39 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias est soluta e
   </template>
   
   <script>
+  import { ref, onMounted } from "vue";
+  
   export default {
     props: {
       // No image-related props since we're removing the image
     },
+    setup() {
+      const isVisible = ref(false);
+  
+      onMounted(() => {
+        const options = {
+          threshold: 0.5, // Change this value as needed for the desired trigger point
+        };
+  
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              isVisible.value = true;
+              observer.disconnect();
+            }
+          });
+        }, options);
+  
+        observer.observe(document.querySelector(".centered-hero-content"));
+      });
+  
+      return {
+        isVisible,
+      };
+    },
   };
   </script>
+  
   
   <style>
 /* Add any custom styles for the centered-hero section here */
@@ -32,10 +59,19 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias est soluta e
   padding: 120px 15px; /* Increase vertical padding for more space */
 }
 
-.content {
+.centered-hero-content {
   text-align: center;
   max-width: 1240px; /* Limit the width of the content to 1240px */
-  width: 100%; /* Make the content responsive within the max-width */
+  width: 100%;
+  opacity: 0;
+  transform: translateY(50px); /* Initial position */ /* Make the content responsive within the max-width */
+   /* Apply transitions for smooth animation */
+   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to the final position */
 }
 
 .hero-title {

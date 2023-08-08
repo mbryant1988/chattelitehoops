@@ -1,5 +1,5 @@
 <template>
-    <div class="home-page background-container" >
+    <div class="home-page about-background-container" >
       <h1 class="coming-soon-text">About</h1>
     </div>
     <CenteredHero
@@ -68,7 +68,7 @@ export default {
     transform: translate(-50%, -50%);
   }
 
-  .background-container {
+  .about-background-container {
   position: relative;
   height: 100vh;
   background-image: url("@/assets/DSC_2821.jpg");
