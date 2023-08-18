@@ -115,15 +115,16 @@
    
   
   <style>
+  /* Common styles for both desktop and mobile */
   .stats-section {
-    background-color: #14274e; /* Use your secondary color */
+    background-color: #14274e;
     color: white;
-    padding: 120px 0;
+    padding: 120px 0; /* Adjust padding for both desktop and mobile */
   }
   
   .stats-header {
     text-align: center;
-    font-size: 72px; /* Update font size for the header */
+    font-size: 72px;
     margin-bottom: 30px;
     margin-top: 0;
   }
@@ -139,14 +140,52 @@
     text-align: center;
   }
   
-  .stat-value {
-    font-size: 56px; /* Update font size for the stats */
-    font-weight: 700;
-    margin-bottom: 10px;
+  /* Desktop Styles */
+  @media (min-width: 768px) {
+    .stats-header {
+      font-size: 48px; /* Adjust font size for desktop header */
+    }
+  
+    .stat-value {
+      font-size: 40px; /* Adjust font size for desktop stats */
+      margin-bottom: 10px;
+    }
+  
+    .stat-label {
+      font-size: 28px; /* Adjust font size for desktop labels */
+    }
   }
   
-  .stat-label {
-    font-size: 36px;
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .stats-section {
+      padding: 60px 0; /* Adjust padding for mobile */
+    }
+  
+    .stats-header {
+      font-size: 36px; /* Adjust font size for mobile header */
+    }
+  
+    .stats-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .stat {
+      flex-basis: calc(50% - 20px);
+      margin-bottom: 20px;
+    }
+  
+    .stat-value {
+      font-size: 32px; /* Adjust font size for mobile stats */
+      margin-bottom: 5px;
+    }
+  
+    .stat-label {
+      font-size: 24px; /* Adjust font size for mobile labels */
+    }
   }
   </style>
   
