@@ -143,16 +143,17 @@
   /* Desktop Styles */
   @media (min-width: 768px) {
     .stats-header {
-      font-size: 48px; /* Adjust font size for desktop header */
+      font-size: 72px; /* Adjust font size for desktop header */
     }
   
     .stat-value {
-      font-size: 40px; /* Adjust font size for desktop stats */
+      font-size: 56px; /* Adjust font size for desktop stats */
       margin-bottom: 10px;
+      font-weight: 700;
     }
   
     .stat-label {
-      font-size: 28px; /* Adjust font size for desktop labels */
+      font-size: 36px; /* Adjust font size for desktop labels */
     }
   }
   
