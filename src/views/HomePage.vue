@@ -8,21 +8,33 @@
     />
     <Hero />
     <Features :features="featureList" />
+    <StatsSection
+      :total-players="totalPlayers"
+      :championships="championships"
+      :coaches="coaches"
+      :awards="awards"
+    />
   </template>
 
 <script>
 import CenteredHero from "@/components/CenteredHero.vue";
 import Hero from "@/components/HeroImage.vue";
 import Features from "@/components/FeaturesList.vue";
+import StatsSection from "@/components/StatsSection.vue";
 
 export default {
   components: {
     Hero,
     CenteredHero,
-    Features
+    Features,
+    StatsSection
   },
   data() {
     return {
+      totalPlayers: 200, // Sample data, replace with actual values
+      championships: 10, // Sample data, replace with actual values
+      coaches: 15, // Sample data, replace with actual values
+      awards: 25, 
       featureList: [
         {
           icon: require("@/assets/vuelogo.png"), // Replace with the actual path to your icon/image
