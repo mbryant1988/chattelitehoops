@@ -1,0 +1,25 @@
+{
+    "coaches": [
+      {
+        "id": 1,
+        "name": "Coach A",
+        "age": 40,
+        "role": "Head Coach",
+        "school": "High School A",
+        "twitter": "https://twitter.com/coachA",
+        "bio": "Short bio about Coach A.",
+        "team": 1
+      },
+      {
+        "id": 2,
+        "name": "Coach B",
+        "age": 35,
+        "role": "Assistant Coach",
+        "school": "High School B",
+        "twitter": "https://twitter.com/coachB",
+        "bio": "Short bio about Coach B.",
+        "team": 2
+      }
+    ]
+  }
+  

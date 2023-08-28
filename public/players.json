@@ -1,0 +1,30 @@
+{
+    "players": [
+      {
+        "id": 1,
+        "name": "Player 1",
+        "school": "High School A",
+        "age": 16,
+        "position": "Guard",
+        "twitter": "https://twitter.com/player1",
+        "hudl": "https://www.hudl.com/player1",
+        "bio": "Short bio about Player 1.",
+        "gpa": 3.8,
+        "team": 1
+      },
+      {
+        "id": 2,
+        "name": "Player 2",
+        "school": "High School B",
+        "age": 17,
+        "position": "Forward",
+        "twitter": "https://twitter.com/player2",
+        "hudl": "https://www.hudl.com/player2",
+        "bio": "Short bio about Player 2.",
+        "gpa": 3.9,
+        "team": 2
+      }
+
+    ]
+  }
+  

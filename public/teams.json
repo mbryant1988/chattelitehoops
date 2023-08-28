@@ -1,0 +1,43 @@
+{
+    "teams": [
+      {
+        "id": 1,
+        "grade": "3rd",
+        "players": [1, 2, 3],
+        "coach": 1,
+        "schedule": [
+          {
+            "date": "2023-09-01",
+            "opponent": "Opponent A",
+            "location": "Home"
+          },
+          {
+            "date": "2023-09-05",
+            "opponent": "Opponent B",
+            "location": "Away"
+          }
+          // More schedule entries can be added here
+        ]
+      },
+      {
+        "id": 2,
+        "grade": "4th",
+        "players": [4, 5, 6],
+        "coach": 2,
+        "schedule": [
+          {
+            "date": "2023-09-02",
+            "opponent": "Opponent C",
+            "location": "Home"
+          },
+          {
+            "date": "2023-09-06",
+            "opponent": "Opponent D",
+            "location": "Away"
+          }
+        ]
+      }
+
+    ]
+  }
+  
